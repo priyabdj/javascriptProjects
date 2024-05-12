@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./pexels-photo-2559484.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   margin: 20px 20px;
+   /* background-color: beige; 
+   */
+   color: white;
+  
+}
+
+li{
+    list-style-type: none;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+h3{
+    font-size: 24px;
+}
+button{
+    padding: 10px 10px;
+}
+.login-container{
+    height: 70vh;
+    width: 35vw;
+margin-left: 320px;
+text-align: center;
+margin-top: 20px;
+background-color: rgb(235, 234, 233);
+border-radius: 10px;
+opacity: 0.8;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
+.Email,.Password{
+    border: none;
+    border-bottom: 1px solid black;
+    margin-top: 30px;
+   width: 60%;
+    outline: none;
+    background-color: none;
+}
+span{
+    padding-left: 20px;
+    color: blue;
+   
+}
+.Log-btn{
+    padding: 5px 80px;
+    background-color: blue;
+    color: aliceblue;
+    font-size: 18px;
+    border: none;
+}

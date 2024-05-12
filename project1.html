@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+    .red{
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        
+    }
+    .blue{
+        height: 100px;
+        width: 100px;
+        background-color:blue;
+    }
+    .green{
+        height: 100px;
+        width: 100px;
+        background-color:green;
+    }
+    </style>
+<div class="main">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+</div>
+<script>
+   const button= document.getElementsByClassName("red")
+   const body =document.querySelector("body")
+button.forEach(function (button){
+    console.log(button);
+    button.addEventListener("click",function(e){
+        console.log(e);
+        console.log(e.target);
+        if(e.target.id==='grey'){
+            body.style.backgroundColor=e.target.id;
+        }
+        if(e.target.id==='white'){
+            body.style.backgroundColor=e.target.id;
+        }
+        if(e.target.id==='blue'){
+            body.style.backgroundColor=e.target.id;
+        }
+        if(e.target.id==='yellow'){
+            body.style.backgroundColor=e.target.id;
+        }
+
+})
+});
+</script>
+</body>
+</html>

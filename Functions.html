@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function Myapp() {
+        //     const username = "Priya"
+        //     function Second() {
+        //         const website = "www.google.com"
+        //         console.log(username);
+        //         console.log(website)
+        //     }
+        //     // console.log(website)
+        //     Second()
+        //     // Myapp()
+        // }
+        // Myapp()
+
+        const user = {
+
+            username: "Priya",
+            price: "99",
+            welcomeMessage: function () {
+                console.log(`${this.username},welcome to website`)
+            }
+
+
+        }
+        // user.welcomeMessage ();
+        // user.username ="Payal"
+        // user.welcomeMessage();
+        // console.log(this);
+
+
+        //         function One(){
+        //             let username="Paryal"
+        //     console.log(this.username);
+
+        // }
+        // One()
+
+        const myNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        // const newNums =[]
+        // myNums.forEach((num)=>{
+        //     if(num>4){
+        //         newNums.push(num)
+        //     }
+        // })
+        // console.log(newNums);
+        // const newNums = myNums
+        //     .map((e) =>
+        //         e * 10)
+        //     .map((e) =>
+        //         e + 1)
+        //         .filter((e)=>e>=30)
+
+        // console.log(newNums)
+
+//reduce
+
+const myNums =[1,2,3,4]
+const myTotal =myNums.reduce(function(acc,currval){
+return acc+currval
+},0)
+console.log(myTotal)
+
+
+    </script>
+
+</body>
+
+</html>
